@@ -261,3 +261,33 @@ input[type=range] {
     display: flex;
     flex-direction: column;
 }
+/* ========================================== */
+/* DISEÑO RESPONSIVO (TELÉFONOS MÓVILES)      */
+/* ========================================== */
+@media (max-width: 850px) {
+    /* Cambiar de 3 columnas a 1 sola columna hacia abajo */
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px 20px; /* Reducimos el espacio a los lados para aprovechar la pantalla */
+        gap: 20px;
+    }
+
+    /* Ajustar los tamaños del encabezado para que no ocupen tanto espacio */
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo-text {
+        font-size: 2rem;
+    }
+
+    .menu-asteriscos {
+        font-size: 3rem;
+    }
+
+    /* Ajuste para que las portadas no se vean gigantes en celular */
+    .cover-art {
+        width: 65px;
+        height: 65px;
+    }
+}
